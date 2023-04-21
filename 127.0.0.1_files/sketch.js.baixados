@@ -1,0 +1,36 @@
+
+function preload(){
+mar = loadImage("sea.png");
+
+navio2 = loadAnimation("ship-1.png","ship-2.png");
+}
+
+function setup(){
+ 
+
+
+
+  createCanvas(400,400);
+  
+  
+ 
+var sea = createSprite(200,200);
+sea.addImage(mar);
+
+var navio1 = createSprite(200,300);
+  navio1.addAnimation("navi",navio2);
+ navio1.scale = 0.2;
+ sea.velocityX = (1);
+ 
+}
+
+function draw() {
+  background("blue");
+
+ 
+
+    drawSprites();
+
+ 
+}
+
